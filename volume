@@ -1,0 +1,20 @@
+int square (int);
+int volume (int,int);
+int main(void)
+{
+ int a,h;
+ printf ("Input a: ");
+ scanf ("%d", &a);
+ printf ("Input h: ");
+ scanf ("%d", &h);
+ printf ("Square = a*a = %d, volume = a*a * h = %d\n", square(a),volume(a,h));
+ return 0;
+}
+int square (int q)
+{
+ return q*q;
+}
+int volume (int q, int w)
+{
+ return square(q)*w;
+}
